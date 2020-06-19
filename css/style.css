@@ -53,7 +53,8 @@ body {
   min-width: 100vw; }
   .container .header {
     height: 7rem;
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    display: flex; }
   .container .contents {
     display: flex; }
     .container .contents .sidebar {
@@ -61,3 +62,18 @@ body {
       flex: 0 0 18%; }
     .container .contents .room-view {
       flex: 1; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-nav__icon {
+  height: 2.3rem;
+  width: 2.3rem; }
+
+.user-nav__user-photo {
+  height: 4rem;
+  border-radius: 50%; }
