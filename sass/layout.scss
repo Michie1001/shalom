@@ -1,0 +1,19 @@
+.container{
+	min-width: 100vw;
+
+	.header{
+		height: 7rem;
+		background-color: #f7f7f7;
+	}
+
+	.contents{
+		display: flex;
+		.sidebar{
+			background-color: var(--color-tar);
+			flex: 0 0 18%;
+		}
+		.room-view{
+			flex: 1;
+		}
+	}
+}
