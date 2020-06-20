@@ -1,3 +1,10 @@
+[class$="__icon"]{
+	height: 2rem;
+	width: 2rem;
+	fill: var(--grey-dark-2);
+}
+
+
 /////////////////////////
 /////LOGO
 
@@ -49,11 +56,6 @@
 			transform: translateY(2px);
 		}
 	}
-	&__icon{
-		height: 2rem;
-		width: 2rem;
-		fill: var(--grey-dark-2);
-	}
 }
 
 
@@ -79,11 +81,6 @@
 	}
 	&__icon-box{
 		position: relative;
-	}
-	&__icon{
-		height: 2.3rem;
-		width: 2.3rem;
-		fill: var(--grey-dark-2);
 	}
 	&__notification{
 		font-size: .9rem;
@@ -116,4 +113,37 @@
 		font-weight: bold;
 		color: var(--color-tar);
 	}
+}
+
+
+
+.contents{
+	.sidebar{
+		////////////////////////////////
+		/////////SIDEBAR
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		.side_nav{
+			
+			&__item{
+
+				span {}
+			}
+			&__link{
+
+			}	
+		}
+	}
+}
+
+////////////////////////////////
+///////Copyright
+
+.copyright{
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 2.5rem;
+	color: var(--grey-light-4);
 }
