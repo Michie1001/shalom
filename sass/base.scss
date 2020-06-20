@@ -19,7 +19,7 @@ Grey dark 3: #999
 :root{
 	--color-brown: #B39B84; //custom css variables, note that the double dash at the beginning is required. Use var(*custom variable name*) to call it
 	--color-tar: #2e302e;
-	--color-peach: #ffe9d5;
+	// --color-peach: #ffe9d5;
 	--color-lilac: #e1d7fc;
 	--color-royal-purple: #7862b3;
 	--grey-light-1: #faf9f9; 
@@ -53,4 +53,6 @@ body{
 	line-height: 1.6;
 	color: var(--grey-dark-1);
 	background-repeat: no-repeat;
+
+	padding: 1rem;
 }

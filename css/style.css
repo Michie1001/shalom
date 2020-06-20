@@ -18,7 +18,6 @@ Grey dark 3: #999
 :root {
   --color-brown: #B39B84;
   --color-tar: #2e302e;
-  --color-peach: #ffe9d5;
   --color-lilac: #e1d7fc;
   --color-royal-purple: #7862b3;
   --grey-light-1: #faf9f9;
@@ -47,7 +46,8 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--grey-dark-1);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 1rem; }
 
 .container {
   min-width: 100vw; }
@@ -62,7 +62,7 @@ body {
     display: flex; }
     .container .contents .sidebar {
       background-color: var(--color-tar);
-      flex: 0 0 18%; }
+      flex: 0 0 20%; }
     .container .contents .room-view {
       flex: 1; }
 
@@ -151,6 +151,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .contents .sidebar .side-nav__item {
+    position: relative; }
+    .contents .sidebar .side-nav__item:not(:last-child) {
+      margin-bottom: 1rem; }
+    .contents .sidebar .side-nav__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-royal-purple);
+      transform: scaleY(0);
+      transition: transform .2s; }
+    .contents .sidebar .side-nav__item:hover::before {
+      transform: scaleY(1); }
+  .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
+    color: var(--grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem; }
+  .contents .sidebar .side-nav__icon {
+    margin-right: 2rem;
+    fill: currentColor; }
 
 .copyright {
   font-size: 1.2rem;
