@@ -185,6 +185,12 @@ body {
     margin-right: 2rem;
     fill: currentColor; }
 
+.contents .gallery {
+  display: flex; }
+  .contents .gallery__photo {
+    width: 100%;
+    display: block; }
+
 .copyright {
   font-size: 1.2rem;
   text-align: center;
