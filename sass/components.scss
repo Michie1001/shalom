@@ -144,11 +144,18 @@
 					width: 3px;
 					background-color: var(--color-royal-purple);
 					transform: scaleY(0);
-					transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
+					transition: transform .2s,
+								width .4s cubic-bezier(1, 0, 0, 1) .2s,
+								background-color .1s;
 				}
-				&:hover::before{
+				&:hover::before,
+				&--active::before {
 					transform: scaleY(1);
 					width: 100%;
+				}
+
+				&:active::before {
+					background-color: var(--color-lilac);
 				}
 			}
 			&__link,

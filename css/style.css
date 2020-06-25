@@ -164,10 +164,12 @@ body {
       width: 3px;
       background-color: var(--color-royal-purple);
       transform: scaleY(0);
-      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
-    .contents .sidebar .side-nav__item:hover::before {
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+    .contents .sidebar .side-nav__item:hover::before, .contents .sidebar .side-nav__item--active::before {
       transform: scaleY(1);
       width: 100%; }
+    .contents .sidebar .side-nav__item:active::before {
+      background-color: var(--color-lilac); }
   .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
     color: var(--grey-light-1);
     text-decoration: none;
