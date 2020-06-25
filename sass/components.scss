@@ -124,6 +124,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding-top: 3rem;
 		
 		.side-nav{
 			
@@ -143,7 +144,7 @@
 					width: 3px;
 					background-color: var(--color-royal-purple);
 					transform: scaleY(0);
-					transition: transform .2s, width .4s .2s;
+					transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
 				}
 				&:hover::before{
 					transform: scaleY(1);
@@ -159,6 +160,12 @@
 				display: flex;
 				align-items: center;
 				padding: 1.5rem 3rem;
+				position: relative;
+				z-index: 10;
+
+				span {
+					font-weight: bold;
+				}
 			}	
 			&__icon{
 				margin-right: 2rem;

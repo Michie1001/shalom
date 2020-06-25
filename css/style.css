@@ -149,7 +149,8 @@ body {
 .contents .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 3rem; }
   .contents .sidebar .side-nav__item {
     position: relative; }
     .contents .sidebar .side-nav__item:not(:last-child) {
@@ -163,7 +164,7 @@ body {
       width: 3px;
       background-color: var(--color-royal-purple);
       transform: scaleY(0);
-      transition: transform .2s, width .4s .2s; }
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
     .contents .sidebar .side-nav__item:hover::before {
       transform: scaleY(1);
       width: 100%; }
@@ -173,7 +174,11 @@ body {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    padding: 1.5rem 3rem; }
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10; }
+    .contents .sidebar .side-nav__link span, .contents .sidebar .side-nav__link:link span, .contents .sidebar .side-nav__link:visited span {
+      font-weight: bold; }
   .contents .sidebar .side-nav__icon {
     margin-right: 2rem;
     fill: currentColor; }
