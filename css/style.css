@@ -46,8 +46,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--grey-dark-1);
-  background-repeat: no-repeat;
-  padding: 1rem; }
+  background-repeat: no-repeat; }
 
 .container {
   min-width: 100vw; }
@@ -164,9 +163,10 @@ body {
       width: 3px;
       background-color: var(--color-royal-purple);
       transform: scaleY(0);
-      transition: transform .2s; }
+      transition: transform .2s, width .4s .2s; }
     .contents .sidebar .side-nav__item:hover::before {
-      transform: scaleY(1); }
+      transform: scaleY(1);
+      width: 100%; }
   .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
     color: var(--grey-light-1);
     text-decoration: none;
