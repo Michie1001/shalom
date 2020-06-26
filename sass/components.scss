@@ -183,11 +183,13 @@
 		////////////////////////////////
 		///////main body
 
-	.gallery {
-		display: flex;
-		&__photo {
-			width: 100%;
-			display: block;
+	.room-view{
+		.gallery {
+			display: flex;
+			&__photo {
+				width: 100%;
+				display: block;
+			}
 		}
 	}
 }
