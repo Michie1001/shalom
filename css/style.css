@@ -65,6 +65,16 @@ body {
       flex: 0 0 20%; }
     .container .contents .room-view {
       flex: 1; }
+    .container .contents .detail {
+      display: flex;
+      padding: 4.5rem;
+      background-color: var(--grey-light-1);
+      border-bottom: 1px solid var(--grey-light-2); }
+      .container .contents .detail .description {
+        flex: 0 0 60%;
+        margin-right: 4.5rem; }
+      .container .contents .detail .user-reviews {
+        flex: 1; }
 
 [class$="__icon"] {
   height: 2rem;
