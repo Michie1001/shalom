@@ -223,10 +223,16 @@ body {
     color: #fff;
     margin-left: 3rem;
     text-align: center;
-    align-self: stretch; }
+    padding: 0 2rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .contents .room-view .overview__rating-average {
       font-size: 2.3rem;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: -4px; }
     .contents .room-view .overview__rating-count {
       font-size: .8rem;
       text-transform: uppercase; }
