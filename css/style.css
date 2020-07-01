@@ -303,9 +303,13 @@ body {
   padding: 3rem;
   margin-bottom: 3.5rem;
   border-radius: 3px;
-  max-width: 30rem; }
+  max-width: 30rem;
+  position: relative;
+  overflow: hidden; }
   .contents .room-view .detail .review__text {
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2; }
   .contents .room-view .detail .review__user {
     display: flex;
     align-items: center;
@@ -325,6 +329,16 @@ body {
   .contents .room-view .detail .review__rating {
     color: var(--color-royal-purple);
     font-size: 2.1rem; }
+  .contents .room-view .detail .review::before {
+    z-index: 1;
+    content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -.5rem;
+    font-size: 20rem;
+    color: var(--color-lilac);
+    line-height: 1;
+    font-family: sans-serif; }
 
 .copyright {
   font-size: 1.2rem;
