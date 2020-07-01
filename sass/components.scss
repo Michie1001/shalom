@@ -295,9 +295,6 @@
 					p{
 						margin-right: auto;
 					}
-					&__friends{
-
-					}
 					&__photo{
 						box-sizing: content-box;
 						height: 4rem;
@@ -312,7 +309,28 @@
 				}
 			}
 			.user-reviews{
+				.review{
+					&__text{
 
+					}
+					&__user{
+						&-box{
+							
+						}
+						&-name{
+
+						}
+						&-date{
+
+						}
+					}
+					&__photo{
+
+					}
+					&__rating{
+
+					}
+				}
 			}
 		}
 	}
