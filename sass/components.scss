@@ -406,10 +406,10 @@
 					left: 0;
 					top: -100%;
 				}
-				&:hover &--visible {
+				&:hover .button--visible { 
 					transform: translateY(100%);
 				}
-				&:hover &--invisible {
+				&:hover .button--invisible {
 					top: 0;
 				}
 			}

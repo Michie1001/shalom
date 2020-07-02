@@ -374,9 +374,9 @@ body {
       padding: 2rem 0;
       left: 0;
       top: -100%; }
-    .contents .room-view .cta .button:hover .contents .room-view .cta .button--visible {
+    .contents .room-view .cta .button:hover .button--visible {
       transform: translateY(100%); }
-    .contents .room-view .cta .button:hover .contents .room-view .cta .button--invisible {
+    .contents .room-view .cta .button:hover .button--invisible {
       top: 0; }
 
 .copyright {
