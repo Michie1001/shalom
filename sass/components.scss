@@ -375,6 +375,44 @@
 				text-transform: uppercase;
 				color: var(--color-brown);
 			}
+			.button{
+				font-size: 1.5rem;
+				border: none;
+				font-weight: 300;
+				text-transform: uppercase;
+				border-radius: 100px;
+				background-image: linear-gradient(to right bottom, 
+								var(--color-lilac), 
+								var(--color-royal-purple)
+								);
+				color: #fff;
+				position: relative;
+				overflow: hidden;
+				outline: none;
+				cursor: pointer;
+
+				& > *{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					transition: all .2s;
+				}
+				&--visible{
+					padding: 2rem 7.5rem;
+				}
+				&--invisible{
+					position: absolute;
+					padding: 2rem 0;
+					left: 0;
+					top: -100%;
+				}
+				&:hover &--visible {
+					transform: translateY(100%);
+				}
+				&:hover &--invisible {
+					top: 0;
+				}
+			}
 		}
 	}
 }

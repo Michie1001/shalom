@@ -350,6 +350,34 @@ body {
     margin-bottom: 2.5rem;
     text-transform: uppercase;
     color: var(--color-brown); }
+  .contents .room-view .cta .button {
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(to right bottom, var(--color-lilac), var(--color-royal-purple));
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer; }
+    .contents .room-view .cta .button > * {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      transition: all .2s; }
+    .contents .room-view .cta .button--visible {
+      padding: 2rem 7.5rem; }
+    .contents .room-view .cta .button--invisible {
+      position: absolute;
+      padding: 2rem 0;
+      left: 0;
+      top: -100%; }
+    .contents .room-view .cta .button:hover .contents .room-view .cta .button--visible {
+      transform: translateY(100%); }
+    .contents .room-view .cta .button:hover .contents .room-view .cta .button--invisible {
+      top: 0; }
 
 .copyright {
   font-size: 1.2rem;
