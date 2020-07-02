@@ -340,6 +340,17 @@ body {
     line-height: 1;
     font-family: sans-serif; }
 
+.contents .room-view .cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .contents .room-view .cta__book-now {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: .6px;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: var(--color-brown); }
+
 .copyright {
   font-size: 1.2rem;
   text-align: center;
