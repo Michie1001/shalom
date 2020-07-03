@@ -60,6 +60,9 @@ body {
 
 .container .contents {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .container .contents {
+      flex-direction: column; } }
   .container .contents .sidebar {
     background-color: var(--color-tar);
     flex: 0 0 20%; }
@@ -71,29 +74,23 @@ body {
     background-color: var(--grey-light-1);
     border-bottom: 1px solid var(--grey-light-2);
     font-size: 1.3rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .container .contents .detail {
-        flex-direction: column; } }
+        padding: 2rem; } }
     .container .contents .detail .description {
       flex: 0 0 60%;
       margin-right: 4.5rem;
       background-color: #fff;
       box-shadow: var(--shadow);
       padding: 3rem; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 56.25em) {
         .container .contents .detail .description {
-          margin-right: 0;
-          margin-bottom: 5rem; } }
+          margin-right: 2rem; } }
     .container .contents .detail .user-reviews {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      @media only screen and (max-width: 75em) {
-        .container .contents .detail .user-reviews {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between; } }
 
 [class$="__icon"] {
   height: 2rem;
@@ -109,6 +106,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .search {
+      display: none; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -179,41 +179,55 @@ body {
 .contents .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: 3rem; }
-  .contents .sidebar .side-nav__item {
-    position: relative; }
-    .contents .sidebar .side-nav__item:not(:last-child) {
-      margin-bottom: 1rem; }
-    .contents .sidebar .side-nav__item::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 3px;
-      background-color: var(--color-royal-purple);
-      transform: scaleY(0);
-      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
-    .contents .sidebar .side-nav__item:hover::before, .contents .sidebar .side-nav__item--active::before {
-      transform: scaleY(1);
-      width: 100%; }
-    .contents .sidebar .side-nav__item:active::before {
-      background-color: var(--color-lilac); }
-  .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
-    color: var(--grey-light-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    position: relative;
-    z-index: 10; }
-    .contents .sidebar .side-nav__link span, .contents .sidebar .side-nav__link:link span, .contents .sidebar .side-nav__link:visited span {
-      letter-spacing: 1.5px; }
-  .contents .sidebar .side-nav__icon {
-    margin-right: 2rem;
-    fill: currentColor; }
+  justify-content: space-between; }
+  .contents .sidebar .side-nav {
+    padding-top: 3rem; }
+    .contents .sidebar .side-nav__item {
+      position: relative; }
+      .contents .sidebar .side-nav__item:not(:last-child) {
+        margin-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .contents .sidebar .side-nav__item:not(:last-child) {
+            margin-bottom: 0; } }
+      .contents .sidebar .side-nav__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-royal-purple);
+        transform: scaleY(0);
+        transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+      .contents .sidebar .side-nav__item:hover::before, .contents .sidebar .side-nav__item--active::before {
+        transform: scaleY(1);
+        width: 100%; }
+      .contents .sidebar .side-nav__item:active::before {
+        background-color: var(--color-lilac); }
+      @media only screen and (max-width: 56.25em) {
+        .contents .sidebar .side-nav__item {
+          flex: 1; } }
+    .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
+      color: var(--grey-light-1);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      position: relative;
+      z-index: 10; }
+      .contents .sidebar .side-nav__link span, .contents .sidebar .side-nav__link:link span, .contents .sidebar .side-nav__link:visited span {
+        letter-spacing: 1.5px; }
+      @media only screen and (max-width: 56.25em) {
+        .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
+          text-align: center; } }
+    .contents .sidebar .side-nav__icon {
+      margin-right: 2rem;
+      fill: currentColor; }
+    @media only screen and (max-width: 56.25em) {
+      .contents .sidebar .side-nav {
+        display: flex;
+        padding-top: 0; } }
 
 .contents .room-view .gallery {
   display: flex; }
@@ -300,6 +314,8 @@ body {
   align-items: center; }
   .contents .room-view .detail .description .recommend p {
     margin-right: auto; }
+  .contents .room-view .detail .description .recommend__friends {
+    display: flex; }
   .contents .room-view .detail .description .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -316,12 +332,12 @@ body {
   margin-bottom: 3.5rem;
   border-radius: 3px;
   max-width: 30rem;
-  min-width: 30rem;
   position: relative;
   overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
     .contents .room-view .detail .review {
-      margin: 3rem .5rem; } }
+      margin-bottom: 3rem;
+      padding: 2rem; } }
   .contents .room-view .detail .review__text {
     margin-bottom: 1rem;
     position: relative;
@@ -359,6 +375,9 @@ body {
 .contents .room-view .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .contents .room-view .cta {
+      padding: 2.5rem 0; } }
   .contents .room-view .cta__book-now {
     font-size: 1.6rem;
     font-weight: bold;
@@ -404,6 +423,9 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: var(--grey-light-4); }
+  @media only screen and (max-width: 56.25em) {
+    .copyright {
+      display: none; } }
 
 .button-inline {
   border: none;
