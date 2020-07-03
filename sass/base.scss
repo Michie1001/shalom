@@ -34,6 +34,13 @@ Grey dark 3: #999
 	--shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
 }
 
+//css variables don't work with media queries so we
+//use sass variables for media queries
+
+$bp-largest: 75em; //screen size 1200/16
+$bp-large: 68.75em; //screen size 1100/16
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -48,6 +55,12 @@ Grey dark 3: #999
 html{
 	box-sizing: border-box;
 	font-size: 62.5% //10px like I want divided by 16px default
+
+	// @media only screen and (max-width: $bp-large) {
+	// 	font-size: 50% // 8/16 * 100
+	// 	max-width: 100%; 
+	// 	width: 100%;
+	// }
 }
 body{
 	font-family: "Open Sans", sans-serif;

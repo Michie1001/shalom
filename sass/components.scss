@@ -315,8 +315,13 @@
 				margin-bottom: 3.5rem;
 				border-radius: 3px;
 				max-width: 30rem;
+				min-width: 30rem;
 				position: relative;
 				overflow: hidden;
+
+				@media only screen and (max-width: 56.25em) {
+					margin: 3rem .5rem;
+				}
 
 				&__text{
 					margin-bottom: 1rem;
