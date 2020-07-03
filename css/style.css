@@ -77,6 +77,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .container .contents .detail {
         padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .container .contents .detail {
+        flex-direction: column; } }
     .container .contents .detail .description {
       flex: 0 0 60%;
       margin-right: 4.5rem;
@@ -86,6 +89,10 @@ body {
       @media only screen and (max-width: 56.25em) {
         .container .contents .detail .description {
           margin-right: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .container .contents .detail .description {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
     .container .contents .detail .user-reviews {
       flex: 1;
       display: flex;
@@ -220,10 +227,18 @@ body {
         letter-spacing: 1.5px; }
       @media only screen and (max-width: 56.25em) {
         .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
-          text-align: center; } }
+          text-align: center;
+          padding: 1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contents .sidebar .side-nav__link, .contents .sidebar .side-nav__link:link, .contents .sidebar .side-nav__link:visited {
+          flex-direction: column; } }
     .contents .sidebar .side-nav__icon {
       margin-right: 2rem;
       fill: currentColor; }
+      @media only screen and (max-width: 37.5em) {
+        .contents .sidebar .side-nav__icon {
+          margin-right: 0;
+          width: 1.5rem; } }
     @media only screen and (max-width: 56.25em) {
       .contents .sidebar .side-nav {
         display: flex;
@@ -245,6 +260,10 @@ body {
     letter-spacing: 1px;
     font-weight: 400;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contents .room-view .overview h1 {
+        font-size: 1.8rem;
+        padding: 1.2rem 1rem; } }
   .contents .room-view .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -252,6 +271,10 @@ body {
     width: 1.7rem;
     height: 1.7rem;
     fill: var(--color-royal-purple); }
+    @media only screen and (max-width: 37.5em) {
+      .contents .room-view .overview__icon {
+        width: 1.2rem;
+        height: 1.2rem; } }
   .contents .room-view .overview__location {
     font-size: 1.2rem;
     display: flex;
@@ -276,9 +299,19 @@ body {
       font-size: 2.3rem;
       font-weight: bold;
       margin-bottom: -4px; }
+      @media only screen and (max-width: 37.5em) {
+        .contents .room-view .overview__rating-average {
+          font-size: 1.8rem; } }
     .contents .room-view .overview__rating-count {
       font-size: .8rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .contents .room-view .overview__rating-count {
+          font-size: .5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contents .room-view .overview__rating {
+        padding: 0 1.5rem;
+        margin-left: 1rem; } }
 
 .contents .room-view .detail .description p:not(:last-of-type) {
   margin-botton: 2rem; }

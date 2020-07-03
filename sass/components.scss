@@ -189,11 +189,20 @@
 
 				@media only screen and (max-width: 56.25em) {
 					text-align: center; 
+					padding: 1rem;
+				}
+				@media only screen and (max-width: 37.5em) {
+					flex-direction: column;
 				}
 			}	
 			&__icon{
 				margin-right: 2rem;
 				fill: currentColor;
+				
+				@media only screen and (max-width: 37.5em) {
+					margin-right: 0;
+					width: 1.5rem;
+				}
 			}
 			@media only screen and (max-width: 56.25em) {
 				display: flex;
@@ -223,6 +232,11 @@
 				letter-spacing: 1px;
 				font-weight: 400;
 				padding: 1.5rem 3rem;
+				
+				@media only screen and (max-width: 37.5em) {
+					font-size: 1.8rem;
+					padding: 1.2rem 1rem;
+				}
 			}
 			&__stars{
 				margin-right: auto;
@@ -232,6 +246,10 @@
 				width: 1.7rem;
 				height: 1.7rem;
 				fill: var(--color-royal-purple);
+				@media only screen and (max-width: 37.5em){
+					width: 1.2rem;
+					height: 1.2rem;
+				}
 			}
 			&__location{
 				font-size: 1.2rem;
@@ -260,11 +278,23 @@
 					font-size: 2.3rem;
 					font-weight: bold;
 					margin-bottom: -4px;
+					@media only screen and (max-width: 37.5em){
+						font-size: 1.8rem;
+					}
 				}
 				&-count{
 					font-size: .8rem;
 					text-transform: uppercase;
+
+					@media only screen and (max-width: 37.5em){
+						font-size: .5rem;
+					}
 				}
+				@media only screen and (max-width: 37.5em) {
+					padding: 0 1.5rem;
+					margin-left: 1rem;
+				}
+				
 			}
 		}
 		.detail {
